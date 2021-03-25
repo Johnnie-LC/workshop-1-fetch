@@ -59,17 +59,16 @@ window.fetch(url)
         price.textContent = formatPrice(item.price) 
 
         
-
-
-
         const priceAndTitle = document.createElement('div')
         priceAndTitle.append(title,price)
         priceAndTitle.className = 'text-center md:text-left'
 
         const container = document.createElement('div')
         container.append(imagen,priceAndTitle);
-        container.className = 'md:flex bg-white rounded-lg p-6 hover:bg-gray-300 border-2'
+        container.className = 'md:flex bg-green-200	 rounded-full p-6  hover:bg-green-500 hover:border-black hover:text-white border-2 shadow-xl m-1.5'
         todosLosItems.push(container)
+
+        document.body.className = 'bg-blue-700'
     });
     appNote.append(...todosLosItems)
 })
