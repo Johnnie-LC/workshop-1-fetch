@@ -3,8 +3,7 @@
     "start": "snowpack dev",
     "build": "snowpack build",
     "format": "prettier --write \"src/**/*.js\"",
-    "lint": "prettier --check \"src/**/*.js\"",
-    "homepage":"https://Johnnie-LC.github.io/workshop-1-fetch"
+    "lint": "prettier --check \"src/**/*.js\""
   },
   "devDependencies": {
     "husky": "^4.3.8",
