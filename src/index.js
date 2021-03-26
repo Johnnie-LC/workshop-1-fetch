@@ -6,7 +6,7 @@ const url_base ="https://platzi-avo.vercel.app";
 const url = "https://platzi-avo.vercel.app/api/avo";
 
 const appNote = document.querySelector('#app');
-
+const footerOnes = document.querySelector('.footer-One')
 // API Intl - internacionalisacion en ingles
 // 1 - Formato a fechas 
 // 2 - Formato a monedas
@@ -61,16 +61,24 @@ window.fetch(url)
         
         const priceAndTitle = document.createElement('div')
         priceAndTitle.append(title,price)
-        priceAndTitle.className = 'text-center md:text-left'
+        priceAndTitle.className = 'text-center md:text-left'  
 
+        
         const container = document.createElement('div')
         container.append(imagen,priceAndTitle);
-        container.className = 'md:flex bg-green-200	 rounded-full p-6  hover:bg-green-500 hover:border-black hover:text-white border-2 shadow-xl m-1.5'
-        todosLosItems.push(container)
-
-        document.body.className = 'bg-blue-700'
+        container.className = 'md:flex bg-green-500 sm:min-w-48 rounded-full p-6  hover:bg-green-500 hover:border-black hover:text-white border-2 hover:shadow-md m-1.5'
+        todosLosItems.push(container) 
     });
     appNote.append(...todosLosItems)
+
+    document.body.className = 'bg-green-700'
+
+    const footerOne = document.createElement('footer')
+    const name = document.createElement('h2')
+    name.textContent = 'By Johnnie-LC'
+    footerOne.append(name)
+    footerOne.className = 'text-center text-xl text-white'
+    footerOnes.append(footerOne)
 })
 
 
