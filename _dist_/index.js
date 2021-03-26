@@ -66,7 +66,7 @@ window.fetch(url)
         
         const container = document.createElement('div')
         container.append(imagen,priceAndTitle);
-        container.className = 'md:flex bg-green-500 sm:min-w-48 rounded-full p-6  hover:bg-green-500 hover:border-black hover:text-white border-2 hover:shadow-md m-1.5'
+        container.className = 'md:flex bg-green-500 sm:min-w-48 rounded-full p-6  hover:bg-green-500 hover:border-black hover:text-green-200 border-2 hover:shadow-md m-1.5'
         todosLosItems.push(container) 
     });
     appNote.append(...todosLosItems)
