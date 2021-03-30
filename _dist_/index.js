@@ -6,6 +6,17 @@ const url_base ="https://platzi-avo.vercel.app";
 const url = "https://platzi-avo.vercel.app/api/avo";
 
 const appNote = document.querySelector('#app');
+
+
+// Delegacion de Eventos
+// estamos diciendole al padre que se encargue de todos los eventos que suceden en los hijos
+// es un patron recomendable de usar, y es ideala cuando existe una cantidad enorme de escuchardores
+appNote.addEventListener('click',(event)=>{
+    if(event.target.nodeName === 'H2'){
+        window.alert('Hola')
+    }
+})
+
 const footerOnes = document.querySelector('.footer-One')
 // API Intl - internacionalisacion en ingles
 // 1 - Formato a fechas 
@@ -49,9 +60,7 @@ window.fetch(url)
         // title.style.fontSize = '3rem'
         // usando clase y usar el archivo indexedDB.css  
         title.className = 'text-lg' 
-        title.addEventListener('click',()=>{
-            window.alert('Hola')
-        })
+        
         // este proyecto está equipado con tailwind es un framework de CSS
         // 
         
