@@ -49,6 +49,9 @@ window.fetch(url)
         // title.style.fontSize = '3rem'
         // usando clase y usar el archivo indexedDB.css  
         title.className = 'text-lg' 
+        title.addEventListener('click',()=>{
+            window.alert('Hola')
+        })
         // este proyecto está equipado con tailwind es un framework de CSS
         // 
         
